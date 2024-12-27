@@ -1,82 +1,39 @@
-# Telefon Rehberi Uygulaması
+# Phone Book Application
 
-Bu proje, ASP.NET Core MVC kullanılarak geliştirilmiş basit ve kullanıcı dostu bir telefon rehberi uygulamasıdır.
+A simple phone book application built with ASP.NET Core MVC.
 
-## Özellikler
+## Features
 
-- 👥 Kişi ekleme, düzenleme, silme ve listeleme işlemleri
-- 📱 Telefon numarası ve e-posta doğrulama
-- 💾 SQL Server veritabanı desteği
-- 🎨 Bootstrap ile modern ve responsive tasarım
-- ✨ Kullanıcı dostu arayüz
+- Add, edit, delete and list contacts
+- Phone number and email validation
+- SQL Server database
+- Responsive design with Bootstrap
 
-## Teknolojiler
+## Technologies
 
-- ASP.NET Core MVC (.NET 9.0)
+- ASP.NET Core MVC
 - Entity Framework Core
 - SQL Server (LocalDB)
 - Bootstrap 5
-- HTML5 & CSS3
 
-## Kurulum
+## Setup
 
-1. Projeyi klonlayın:
-```bash
-git clone https://github.com/[kullanıcı-adınız]/PhoneBook-ASP.NET-MVC.git
-```
+1. Clone the repository
+2. Install dependencies: `dotnet restore`
+3. Update database: `dotnet ef database update`
+4. Run the application: `dotnet run`
 
-2. Proje dizinine gidin:
-```bash
-cd PhoneBook-ASP.NET-MVC
-```
+## Usage
 
-3. Gerekli NuGet paketlerini yükleyin:
-```bash
-dotnet restore
-```
+The application allows you to:
+- View all contacts
+- Add new contacts
+- Edit existing contacts
+- Delete contacts
 
-4. Veritabanını oluşturun:
-```bash
-dotnet ef database update
-```
+Required fields: First Name, Last Name, and Phone Number
+Optional fields: Email and Address
 
-5. Uygulamayı çalıştırın:
-```bash
-dotnet run
-```
+## License
 
-## Kullanım
-
-- Ana sayfada tüm kişilerin listesini görebilirsiniz
-- "Yeni Kişi Ekle" butonu ile yeni kayıt oluşturabilirsiniz
-- Her kişi için düzenleme ve silme işlemleri yapabilirsiniz
-- Zorunlu alanlar: Ad, Soyad ve Telefon Numarası
-- İsteğe bağlı alanlar: E-posta ve Adres
-
-## Veritabanı Yapısı
-
-Contacts tablosu aşağıdaki alanları içerir:
-- Id (Primary Key)
-- FirstName (Ad)
-- LastName (Soyad)
-- PhoneNumber (Telefon Numarası)
-- Email (E-posta)
-- Address (Adres)
-
-## Geliştirme
-
-1. Projeyi fork edin
-2. Feature branch oluşturun (`git checkout -b feature/amazing-feature`)
-3. Değişikliklerinizi commit edin (`git commit -m 'Add some amazing feature'`)
-4. Branch'inizi push edin (`git push origin feature/amazing-feature`)
-5. Pull Request oluşturun
-
-## Lisans
-
-Bu proje MIT lisansı altında lisanslanmıştır. Daha fazla bilgi için `LICENSE` dosyasına bakınız.
-
-## İletişim
-
-[Adınız] - [E-posta adresiniz]
-
-Proje Linki: [https://github.com/[kullanıcı-adınız]/PhoneBook-ASP.NET-MVC](https://github.com/[kullanıcı-adınız]/PhoneBook-ASP.NET-MVC) 
+This project is licensed under the MIT License - see the `LICENSE` file for details. 
