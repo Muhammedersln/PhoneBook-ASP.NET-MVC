@@ -1,0 +1,42 @@
+@model TelefonRehberi.Models.Contact
+
+@{
+    ViewData["Title"] = "Kişiyi Sil";
+}
+
+<div class="container mt-4">
+    <h1>@ViewData["Title"]</h1>
+
+    <div class="alert alert-danger" role="alert">
+        <h4>Bu kişiyi silmek istediğinizden emin misiniz?</h4>
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3">@Html.DisplayNameFor(model => model.FirstName)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.FirstName)</dd>
+
+                <dt class="col-sm-3">@Html.DisplayNameFor(model => model.LastName)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.LastName)</dd>
+
+                <dt class="col-sm-3">@Html.DisplayNameFor(model => model.PhoneNumber)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.PhoneNumber)</dd>
+
+                <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Email)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Email)</dd>
+
+                <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Address)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Address)</dd>
+            </dl>
+        </div>
+    </div>
+
+    <div class="mt-4">
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="Id" />
+            <button type="submit" class="btn btn-danger">Sil</button>
+            <a asp-action="Index" class="btn btn-secondary">Geri Dön</a>
+        </form>
+    </div>
+</div> 
