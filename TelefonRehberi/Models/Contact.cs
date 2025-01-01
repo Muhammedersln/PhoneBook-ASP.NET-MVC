@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TelefonRehberi.Models
 {
@@ -25,5 +26,12 @@ namespace TelefonRehberi.Models
 
         [Display(Name = "Adres")]
         public string? Address { get; set; }
+
+        // Category ile ilişki
+        [Display(Name = "Kategori")]
+        public int? CategoryId { get; set; }
+
+        [ForeignKey("CategoryId")]
+        public virtual Category? Category { get; set; }
     }
-} 
+}

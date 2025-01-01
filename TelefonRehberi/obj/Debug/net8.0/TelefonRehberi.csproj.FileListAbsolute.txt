@@ -170,3 +170,4 @@ C:\Users\muham\OneDrive\Masaüstü\TelefonRehberi\TelefonRehberi\obj\Debug\net8.
 C:\Users\muham\OneDrive\Masaüstü\TelefonRehberi\TelefonRehberi\obj\Debug\net8.0\TelefonRehberi.genruntimeconfig.cache
 C:\Users\muham\OneDrive\Masaüstü\TelefonRehberi\TelefonRehberi\obj\Debug\net8.0\ref\TelefonRehberi.dll
 C:\Users\muham\OneDrive\Masaüstü\TelefonRehberi\TelefonRehberi\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\muham\OneDrive\Masaüstü\TelefonRehberi\TelefonRehberi\obj\Debug\net8.0\TelefonRehberi.sourcelink.json
